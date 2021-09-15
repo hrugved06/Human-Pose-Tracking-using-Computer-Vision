@@ -28,11 +28,11 @@ Human pose estimation refers to the process of inferring poses in an image. Esse
 
 ### Image:
 
-![Result]()
+![Image](https://raw.githubusercontent.com/hrugved06/Human-Pose-Tracking-using-Computer-Vision/main/output/img/result.jpg)
 
 ### Video:
 
-![Video]()
+![Video](https://github.com/hrugved06/Human-Pose-Tracking-using-Computer-Vision/blob/main/output/vid/2.avi)
 
 ---
 
