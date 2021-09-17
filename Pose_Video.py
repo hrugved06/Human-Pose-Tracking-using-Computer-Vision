@@ -23,7 +23,7 @@ elif MODE == "MPII":
                   [14, 11], [11, 12], [12, 13]]
 
 # Taking user input video
-userImageInput = cv2.VideoCapture(r"D:\MyLearnings\GIT and Github\Github Projects\Human-Pose-Detection/assets/vid/d2.mp4")
+userImageInput = cv2.VideoCapture(r"./<path>/d2.mp4")
 frame_width = int(userImageInput.get(3))
 frame_height = int(userImageInput.get(4))
 fps = int(userImageInput.get(5))
@@ -141,8 +141,6 @@ while True:
             usernameDict.append(i)
             userangleDict.append('0')
         j += 1
-    # print(userangleDict, "aadmin")
-    # print(dictAngle,"admin.......")
 
     for pair in POSE_PAIRS:
 

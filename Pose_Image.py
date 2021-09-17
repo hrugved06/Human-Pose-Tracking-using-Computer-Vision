@@ -136,7 +136,6 @@ for pair in POSE_PAIRS:
     if points[partA] and points[partB]:
         cv2.line(frame, points[partA], points[partB], (0, 255, 255), 2)
         cv2.line(frameWhite, points1[partA], points1[partB], (0, 255, 255), 2)
-        # cv2.circle(frame1, points[partA], 8, (0, 0, 255), thickness=-1, lineType=cv2.FILLED)
 
 userDict = dict(zip(usernameDict, userangleDict))
 
