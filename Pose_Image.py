@@ -9,26 +9,26 @@ MODE = "MPII"
 
 # Common object in Context
 if MODE == "COCO":
-    protoFile = r"D:\MyLearnings\GIT and Github\Github Projects\Human-Pose-Detection/model/pose_deploy_linevec_faster_4_stages.prototxt"
-    weightsFile = r"D:\MyLearnings\GIT and Github\Github Projects\Human-Pose-Detection/model/pose_iter_440000.caffemodel"
+    protoFile = r"./<path>/pose_deploy_linevec_faster_4_stages.prototxt"
+    weightsFile = r"./<path>/pose_iter_440000.caffemodel"
     nPoints = 18
     POSE_PAIRS = [[1, 0], [1, 2], [1, 5], [2, 3], [3, 4], [5, 6], [6, 7], [1, 8], [8, 9], [9, 10], [1, 11],
                   [11, 12], [12, 13], [0, 14], [0, 15], [14, 16], [15, 17]]
 
 # Multi-person II
 elif MODE == "MPII":
-    protoFile = r"D:\MyLearnings\GIT and Github\Github Projects\Human-Pose-Detection/model/pose_deploy_linevec.prototxt"
-    weightsFile = r"D:\MyLearnings\GIT and Github\Github Projects\Human-Pose-Detection/model/pose_iter_160000.caffemodel"
+    protoFile = r"./<path>/pose_deploy_linevec.prototxt"
+    weightsFile = r"./<path>/pose_iter_160000.caffemodel"
     nPoints = 15
     POSE_PAIRS = [[0, 1], [1, 2], [2, 3], [3, 4], [1, 5], [5, 6], [6, 7], [1, 14], [14, 8], [8, 9], [9, 10],
                   [14, 11], [11, 12], [12, 13]]
 
 # User image input
-userImageInput = r"D:\MyLearnings\GIT and Github\Github Projects\Human-Pose-Detection/assets/img/pose.jpg"
+userImageInput = r"./<path>/ak.jpg"
 print(userImageInput)
 
 # background frame
-img = r"D:\MyLearnings\GIT and Github\Github Projects\Human-Pose-Detection/assets/img/White.jpg"
+img = r"./<path>/White.jpg"
 
 frame = cv2.imread(userImageInput)
 print(frame.shape)
@@ -140,7 +140,7 @@ for pair in POSE_PAIRS:
 
 userDict = dict(zip(usernameDict, userangleDict))
 
-pose_output = r"D:\MyLearnings\GIT and Github\Github Projects\Human-Pose-Detection/output/img/result.jpg"
+pose_output = r"./<path>/ak_result.jpg"
 cv2.imwrite(pose_output, frameWhite)
 
 AngleDict = str(
